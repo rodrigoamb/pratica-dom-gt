@@ -51,3 +51,13 @@ form.addEventListener("submit", (event) => {
 
   form.reset();
 });
+
+const checkbox = document.getElementById("checkbox");
+
+checkbox.addEventListener("change", () => {
+  if (checkbox.checked) {
+    inputPassword.type = "text";
+  } else {
+    inputPassword.type = "password";
+  }
+});
