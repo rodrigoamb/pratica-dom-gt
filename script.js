@@ -25,3 +25,29 @@ aparecerFormulario.addEventListener("click", () => {
   form.style.width = "40%";
   form.style.gap = "15px";
 });
+
+const inputName = document.getElementById("name");
+const inputEmail = document.getElementById("email");
+const inputPassword = document.getElementById("password");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const name = inputName.value.trim();
+  const email = inputEmail.value.trim();
+  const password = inputPassword.value.trim();
+
+  if (name === "" || email === "" || password === "") {
+    return;
+  }
+
+  const ul = document.getElementById("corpo-lista");
+
+  ul.innerHTML = `
+  <li>${name}</li>
+  <li>${email}</li>
+  <li>${password}</li>
+  `;
+
+  form.reset();
+});
