@@ -1,0 +1,18 @@
+.default {
+  color: red;
+  background-color: transparent;
+  width: 100%;
+  padding: 0 0;
+}
+
+.estilo-titulo {
+  color: blue;
+  background-color: black;
+  width: fit-content;
+  padding: 20px 60px;
+}
+
+.container-formulario {
+  display: none;
+  margin-top: 100px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulando DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1 class="default" id="titulo">Manipulando o DOM</h1>
+      <button type="button" id="btn">Clique aqui</button>
+    </div>
+
+    <button type="button" id="btn-aparece-formulario">
+      Aparecer formulário
+    </button>
+
+    <form id="formulario" class="container-formulario">
+      <input type="text" name="name" id="name" placeholder="Digite seu nome" />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Digite seu email"
+      />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Digite sua senha"
+      />
+      <button type="submit">Enviar Formulário</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
